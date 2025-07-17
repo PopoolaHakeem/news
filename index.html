@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | News homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="font-sans ">
+    <div class="pt-10 md:pt-20 lg:pt-25 px-7 md:px-14 lg:px-18  ">
+
+        <!-- mobile-nav -->
+        <nav id="mobile-nav-list" class="hidden md:hidden relative  sm:top-[7px] md:top-[7px] ">
+            <ul class="text-[#333] font-semibold italic w-[70%] left-0 h-full fixed text-start pt-20 pl-10 border-t- bg-white space-y-7 ">
+                <li><a href="#" class="text-black">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+
+        <!-- nav-bar -->
+        <nav id="nav-bar" class="w-full left-0 fixed bg-white flex justify-between top-0 py-5 pr-4 pl-6 md:py-5 md:px-14 lg:py-5 lg:px-18 ">
+            <div>
+                <img src="/Images/logo.svg" alt="" height="" width="75">
+            </div>
+            <div class="">
+                <ul class="flex items-center h-full text-[18px] text-gray-500 space-x-7 hidden md:flex lg:flex ">
+                    <li class="hover:text-red-400"><a href="#">Home</a></li>
+                    <li class="hover:text-red-400"><a href="#">New</a></li>
+                    <li class="hover:text-red-400"><a href="#">Popular</a></li>
+                    <li class="hover:text-red-400"><a href="#">Trending</a></li>
+                    <li class="hover:text-red-400"><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <!-- toggler button -->
+            <div id="menu-button" class="text-2xl h-full block md:hidden lg:hidden cursor-pointer px-3">
+                <button>| |</button>
+            </div>
+            <div id="cancel-menu" class=" text-3xl h-full hidden cursor-pointer px-3" >
+                <button> X </button>
+            </div>
+        </nav>
+        
+        <!-- first-section -->
+        <div class="w-full h-[]  justify-between space-x-7 md:flex-row  lg:flex flex-col pt-20 md:pt-10 lg:pt-15">
+
+            <!-- Web-3section -->
+            <div class="w-full flex flex-col ">
+                <div><img src="/Images/image-web-3-desktop.jpg" alt=""></div>
+                
+                <div class="sm:flex md:flex lg:flex mt-9 sm:mb-5 sm:space-x-5">
+
+                    <div class="w-[50%] flex text-4xl sm:text-5xl sm:pr-3 md:pr-3 md:text-6xl lg:text-6xl font-extrabold">
+                        <h1 class="flex-col flex pb-5">
+                            <span>The Bright </span>
+                            <span>Future of </span>
+                            <span>Web 3.0?</span>
+                        </h1>
+                    </div>
+
+                    <div class=" w-[50%] flex flex-col md:space-y-5 lg:space-y-5 ">
+                        <p class="block leading-8 text-[18px] ">
+                            <span>We dive into the next evolution of the web that</span>
+                            <span>claims to put the power of the platforms back into</span>
+                            <span>he hands of the people. But is it really fulfilling its</span>
+                            <span>promise?</span>
+                        </p>
+                        
+                        <!-- read-more button -->
+                        <div class="pt-9 pb-5 md:py-0 lg:pt-9 lg:pb-0">
+                            <button class=" duration-300 hover:md:animate-[pulse_1s_ease-in-out_infinite] bg-red-400 tracking-widest uppercase py-3 px-7 md:px-10 lg:px-15 text-white font-bold hover:bg-black cursor-pointer  ">
+                                read more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News-section -->
+            <div class="p-7 w-full md:w-full lg:w-[50%] lg:space-y-15 bg-indigo-950 text-[#fffdfa]">
+                
+                <h1 class="text-5xl text-yellow-600 font-bold mb-5">New</h1>
+
+                <div class="border-b-1">
+                    <h3 class="text-2xl font-bold pb-2 hover:text-yellow-600">
+                       <a href="#"> Hydrogen VS Electric Cars</a>
+                    </h3>
+                    <p class="text-[18px] mb-7 ">
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                    </p>
+                </div>
+
+                <div class="border-b-1 mt-7">
+                    <h3 class="text-2xl font-bold pb-2 hover:text-yellow-600">
+                       <a href="#"> The Downsides of AI Artistry</a>
+                    </h3>
+                    <p class="text-[18px] mb-7 ">
+                        What are the possible adverse effects of on-demand AI image generation?
+                    </p>
+                </div>
+
+                <div class="">
+                    <h3 class="text-2xl font-bold pb-2 mt-7 hover:text-yellow-600">
+                        <a href="#">Is VC Funding Drying Up?</a>
+                    </h3>
+                    <p class="text-[18px] mb-7 ">
+                        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card-section -->
+        <div class=" justify-between pt-20 pb-10 flex-col md:flex-row lg:flex space-y-10 space-x-5">
+
+            <div class=" flex space-x-5 ">
+                <div><img src="/Images/image-retro-pcs.jpg" alt="" width="160"></div>
+                
+               <div class="flex flex-col space-y-3 ">
+                <h2 class="text-gray-400 text-4xl font-bold">01</h2>
+
+                <h3 class="text-xl font-bold hover:text-red-400 "><a href="#">Reviving Retro PCs</a></h3>
+
+                <p class="flex flex-col text-[17px] text-gray-500">
+                    <span>What happens when old PCs are </span>
+                    <span>given modern upgrades?</span>
+                </p>
+               </div>
+
+            </div>
+            
+            <div class=" flex space-x-5">
+                <div><img src="/Images/image-top-laptops.jpg" alt="" width="160"></div>
+
+                <div class="flex flex-col space-y-3 ">
+                    <h2 class="text-gray-400 text-4xl font-bold">02</h2>
+    
+                    <h3 class="text-xl font-bold hover:text-red-400 "><a href="#">Top 10 Laptops of 2022</a></h3>
+                    
+                    <p class="flex flex-col text-[17px] text-gray-500">
+                        <span>Our best picks for various needs </span>
+                        <span>and budgets.</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class=" flex space-x-5">
+                <div><img src="/Images/image-gaming-growth.jpg" alt="" width="160"></div>
+
+                <div class="flex flex-col space-y-3 ">
+                    <h2 class="text-gray-400 text-4xl font-bold">03</h2>
+    
+                    <h3 class="text-xl font-bold hover:text-red-400 "><a href="#">The Growth of Gaming</a></h3>
+                    
+                    <p class="flex flex-col text-[17px] text-gray-500">
+                        <span>How the pandemic has sparked </span>
+                        <span>fresh opportunities.</span>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- footer -->
+        <footer class="py-10 text-gray-500 text-[13px] tracking-wide font-semibold text-center">
+            Challenge by 
+           <a href="#"> Frontend Mentor</a>. 
+           Coded by 
+            <a href="#">Muffins</a>.
+        </footer>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
